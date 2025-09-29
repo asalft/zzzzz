@@ -1,0 +1,62 @@
+{
+    "name": "فريدوم صوتي",
+    "description": "- السورس اخر اصدار .",
+    "logo": "https://graph.org/file/ce800ecf11126af579375.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "Fallen",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "- اكتب ايبي ايدي .",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "- اكتب ايبي هاش .",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "- اكتب توكن البوت",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "- اكتب ايدي المالك .",
+        "value": "1854384004",
+        "required": true
+      },
+      "SESSION": {
+        "description": "- كود بايروجرام .",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "- ايدي المطور .",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "- قناة المطور .",
+        "value": "https://t.me/xl444",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
